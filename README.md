@@ -14,6 +14,8 @@
 *   createTrackbar : 操作用滑桿程式
 *   Erosion  erode 影像侵蝕 dilate 影像擴充
 *   match template : 模板匹配(match template)是一種用於尋找與模板圖像比對
+*   align   比對調整旋轉
+*   findContours    找輪廍
 
 
 

@@ -11,10 +11,17 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('opencv-fig2-board.jpg',0)
 img2 = img.copy()
-template = cv2.imread('opencv-fig2-board3.jpg',0)
-template = cv2.resize(template, (150, 150), interpolation=cv2.INTER_AREA)
+template = cv2.imread('opencv-fig2-board3.jpg',0) # 0 是轉灰階的意思
+#template = cv2.resize(template, (150, 150), interpolation=cv2.INTER_AREA)
+
+## 發現 shape 出來的 232 392 是( 高度 , 寛度)
+print(template.shape);
+print(template.shape[::1]);
 
 w, h = template.shape[::-1]
+
+print("w: %d , h: %d" %(w,h));
+
 
 # All the 6 methods for comparison in a list (六種演算法)
 methods = ['cv2.TM_CCOEFF', 'cv2.TM_CCOEFF_NORMED', 'cv2.TM_CCORR',
