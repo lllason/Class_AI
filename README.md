@@ -19,4 +19,9 @@
 *   Canny : 影像邊緣偵測 Canny Edge Detection
 
 ## NLP (影自然語言處理)
-*   nltk : lib (Collections,Copora,Models)
+*   nltk : lib (Collections,Copora,Models) Collection donwload
+*   
+*   stopwords : (停用詞/忽略詞)
+*   stern : 去除字尾變化,eg : s , ed 
+*   tokenlize : 切割　sent_tokenlize / work_tokenlize
+*   NaiveBayesClassifier : 貝氏分類　train (訓練)

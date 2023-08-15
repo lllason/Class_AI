@@ -8,13 +8,16 @@ def gender_features(word):
 # Load data and training 
 names = ([(name, 'male') for name in names.words('male.txt')] + 
 	 [(name, 'female') for name in names.words('female.txt')])
- 
+
+#print(names) 
 featuresets = [(gender_features(n), g) for (n,g) in names] 
 train_set = featuresets
 classifier = nltk.NaiveBayesClassifier.train(train_set) 
  
 # Predict
-print(classifier.classify(gender_features('Christina')))
+name=input('Name: ')
+print(classifier.classify(gender_features(name)))
+
 
 # Predict
 #name = input("Name: ")

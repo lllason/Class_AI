@@ -6,7 +6,12 @@ data = "All work and no play makes jack dull boy. All work and no play makes jac
 words = word_tokenize(data)
 print(words)
 
-stopWords = set(stopwords.words('english'))
+stopWords = set(stopwords.words('chinese'))
+
+print("------------------------")
+print(stopWords)
+print("------------------------")
+
 words = word_tokenize(data)
 wordsFiltered = []
 for w in words:
